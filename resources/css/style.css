@@ -5,9 +5,22 @@ html {
   font-size: 16px;
 }
 
+header {
+  position: fixed;
+  z-index: 5;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.banner {
+  background-image: url(../images/banner-landingpage.jpg);
+}
+
+#sign-up-cta {
+  margin: 170px 100px;
 }
 
 .center {
@@ -26,6 +39,16 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 90%;
+  max-height: 65%;
+  padding: 2rem 2rem 2.5rem 2rem;
+}
+
+.images-container {
+  display: flex;
+  width: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 @media only screen and (max-width: 760px) {
