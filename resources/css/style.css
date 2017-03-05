@@ -62,9 +62,9 @@ header {
 }
 
 header .content {
-  display: flex;
   align-items: center;
   padding: 1.875rem;
+  display: flex;
 }
 
 header .logo {
@@ -95,37 +95,57 @@ header .mobile {
   display: none;
 }
 
+header .tablet {
+  display: none;
+}
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
   }
 
   header .mobile {
+    display: none;
+  }
+
+  header .tablet {
     display: block;
-    width: 100%;
   }
 
-  header .content {
-    padding: .5rem 0;
-  }
-
-  header .mobile ul {
+  header .tablet ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
 
-  header .mobile li {
+  header .tablet li {
     padding: 0;
   }
 
-  header .mobile .button {
-    padding: .1875rem .5rem;
+  header .icon {
+    width: auto;
+    height: auto;
+  }
+
+  header .content {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+  }
+
+  header .tablet .button {
     background-color: #9dc20b;
     line-height: 1.6;
-    color: white;
+    border-radius: 4px;
+    padding: .1875rem .5rem;
   }
+
+  #features-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 /* Sign Up Section */
@@ -276,7 +296,7 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #features-section {
-    flex-flow: column;
+    flex-flow: row;
     padding: 0;
   }
 
