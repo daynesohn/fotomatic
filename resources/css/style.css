@@ -46,16 +46,6 @@ header {
   max-width: 100%;
 }
 
-.images-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.images-container img {
-  padding: 0;
-}
-
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -324,6 +314,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   display: flex;
+  padding: 0 1%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -348,7 +339,9 @@ header .mobile {
   }
 
   #filters-section .images-container {
-    padding: 0;
+    display: flex;
+    max-width: 100%;
+    padding: 0 1%;
   }
 
   #filters-section .extra {
@@ -362,11 +355,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+.quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
